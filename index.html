@@ -1,38 +1,151 @@
-<style>
-	p{
-		text-indent: 50px;
-	}
-</style>
 <head>
-	<link rel="stylesheet" href="styles/materialize.min.css"/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="grey lighten-3">
-	<div class="card-panel blue lighten-2 row">
-		<div class="col s6">
-			<h4 class="white-text">Hi, I'm Jackson Schwarz</h4>
-		</div>
-		<div class="col s1">
-			<img src="static/profile.jpg" style="width:150px;height:150px;" class="circle"/>
-		</div>
-	</div>
-	<p>I'm a programmer, specializing in javascript and python, and a student at Wentworth Institute of Technology. I am particularly interested in web development. I have done some small projects in web development that I've done to boost my "resume". The list will be updated as I add more projects. The resources I used in each project will be documented next to the name of the project.</p>
-	<p>Here you will find a collection of small projects I've done.</p>
-	<div class="collection">
-		<a class="collection-item blue-text" href="/ascii_waterfall">Code Scroll (jQuery)</a>
-		<a class="collection-item blue-text" href="/random-boston">Random Map Points (jQuery, Google Maps)</a>
-		<a class="collection-item blue-text" href="/Grabbr-2">Grabbr (jQuery)</a>
-		<a class="collection-item blue-text" href="https://warm-journey-30319.herokuapp.com/">Who can buy who? (Express, Python web scraping)</a>
-	</ul>
-</body>
 <body>
-	<h1>I'm Jackson Schwarz</h1>
-	<p>I'm a programmer, specializing in python and javascript. And a student at Wentworth Institute of Technology.</p>
-	<p>Here you will find a collection of small projects I've done. Enjoy.<p>
-	<ul>
-		<li><a href="/ascii_waterfall">Code Scroll Effect</a></li>
-		<li><a href="/Grabbr-2">Grabbr</a></li>
-		<li><a href="https://warm-journey-30319.herokuapp.com/">Who can buy who?</a></li>
-		<li><a href="/random-boston">Random Destination</a></li>
-	</ul>
+    <div class="card-panel blue lighten-2">
+        <h2 class="white-text">Hello, my name is Jackson Schwarz</h2>
+    </div>
+    <div class="row">
+        <div class="about-me col s6">
+            <h3>About Me</h3>
+            <p>I am a student studying Computer Science at Wentworth Institute of Technology in Boston, MA. Currently looking for interships in the Greater Boston or Massachusetts area. </p>
+            <p>I've been interested in development since my early teens and the prospect of making something fascinates me to this day. Besides school, I'm interested in drawing, swimming, and working on personal projects. </p>
+            <p>I specialize in front-end web development, specifically the Angular 2 framework. You can find my portfolio below</p>
+        </div>
+        <div class="skills col s6">
+                <h3>Skills</h3>
+                <div class="collection with-header">
+                    <li class="collection-item" >HTML/CSS/JavaScript</li>
+                    <li class="collection-item" >jQuery/jQueryUI</li>
+                    <li class="collection-item" >Angular 2</li>
+                    <li class="collection-item" >Typescript</li>
+                    <li class="collection-item">Sass</li>
+                    <li class="collection-item" >NodeJS</li>
+                    <li class="collection-item" >Java</li>
+                    <li class="collection-item" >Python</li>
+                    <li class="collection-item">Ruby</li>
+                </div>
+            </div>
+    </div>
+  
+    <div class="portfolio">
+        <h3>Portfolio</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header active" id="1">
+                    <a href="https://demoadmin.symphonylearning.com/ng2/#/login?returnUrl=%2F" target="_blank">Symphony Admin Demonstration Panel</a>
+                    <i class="material-icons" id="collapse-icon1">keyboard_arrow_right</i></div>
+                  <div class="collapsible-body" ><span>This project is an administration panel for the educational software service Symphony Math. The panel takes in data from an external API and displays the data based off of the permission levels of the user. The application includes graphs, pop-ups, and many other Material Design components. The application is built with the Angular 2 framework. <a href="mailto:jackson.schwarz0@gmail.com">Contact me</a> if you want the login information</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header" id="2">
+                    <a href="https://jacksonschwarz.github.io/random-boston/" target="_blank">The Dartboard</a>                    
+                    <i class="material-icons" id="collapse-icon2">keyboard_arrow_right</i>
+                </div>
+                  <div class="collapsible-body"><span>The application takes in a center point and a range and then shows 5 random points within that range from the center. Uses Google Maps API, jQuery.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header" id="3">
+                        <a href="https://jacksonschwarz.github.io/Grabbr/" target="_blank">Grabbr</a>
+                        <i class="material-icons" id="collapse-icon3">keyboard_arrow_right</i></div>
+                    <div class="collapsible-body"><span>Used jQuery and jQuery UI to create a game. Click on the blue token to start. Mouse over the green diamonds to get points and avoid the red circles.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header" id="4">
+                      <a href="https://jacksonschwarz.github.io/grabber3/" target="_blank">Grabber 3</a>
+                      <i class="material-icons" id="collapse-icon4">keyboard_arrow_right</i></div>
+                  <div class="collapsible-body"><span>A completely different game based off of the same concept, uses jQuery and jQuery UI. This version of the game is much more well defined and well programmed than the first iteration of this game. Click on the tokens with the correct number shown in red above</span></div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header" id="5">
+                        <a href="https://github.com/jacksonschwarz/steps-to-philosophy" target="_blank">Steps to Philosophy</a>
+                        <i class="material-icons" id="collapse-icon5">keyboard_arrow_right</i></div>
+                    <div class="collapsible-body"><span>Used a Ruby web scraping library to track a random article's "Steps to Philosophy", meaning the amount of pages are between the article and the article for "Philosophy". The steps are made only by clicking the first link.</span></div>
+                </li>
+
+              </ul>
+    </div>
+    <div class="work-experience">
+        <h3>Work Experience</h3>
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header active" id="6">
+                    <strong>Web UI/Angular 2 Developer @ Symphony Learning</strong>
+                    <i class="material-icons" id="collapse-icon6">keyboard_arrow_right</i>
+                </div>
+                <div class="collapsible-body" >
+                    <small>April 2017-Present</small><br><br>
+                    <span>
+                            Architected and programmed the front end UI of a data dashboard and administration panel for an educational software service. Used the Angular 2 framework to communicate with back end API. Application adheres to Google Material design spec, and is a fully responsive single page app.
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header active" id="7">
+                    <strong>Junior Programmer @ Symphony Learning</strong>
+                    <i class="material-icons" id="collapse-icon7">keyboard_arrow_right</i>
+                </div>
+                <div class="collapsible-body" >
+                    <small>June 2016 - September 2016</small><br><br>
+                    <span>
+                            Prototyped a data dashboard using Angular 2 javascript framework. Provided Quality Assurance testing for a student learning application. Provided audio editing for VO lines in student application.
+                    </span>
+                </div>
+            </li>
+            <li>
+                    <div class="collapsible-header active" id="8">
+                        <strong>Lifeguard/Swim Instructor @ Emilson YMCA</strong>
+                        <i class="material-icons" id="collapse-icon8">keyboard_arrow_right</i>
+                    </div>
+                    <div class="collapsible-body" >
+                        <small>June 2014 - September 2016</small><br><br>
+                        <span>
+                                Gained certification in CPR/AED training. Provided lifeguard duties for 5 pools, including patron interaction. Instructed ages 3-13 the foundations of swimming and water safety.
+                        </span>
+                    </div>
+                </li>
+          </ul>
+    </div>
+    <footer class="page-footer blue lighten-2">
+        <div class="row">
+            <h5>Additional Information</h5>
+            <div class="col s6">
+                <a href="./static/resume2016-2017.pdf" download class="btn blue lighten-1">Download Resume PDF<i class="material-icons right">file_download</i></a>                    
+            </div>
+            <div class="col s6">
+                <a class="btn blue lighten-1">LinkedIn </a>
+                <a class="btn blue lighten-1" href="mailto:jackson.schwarz0@gmail.com">Contact Me<i class="material-icons right">mail</i></a>
+            </div>
+        </div>
+        <small>Jackson Schwarz 2017</small>
+    </footer>
 </body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+    let changeCollapseIcon=function(el, direction){
+        let icon="";
+        if(direction.toLowerCase() == "open"){
+            icon="keyboard_arrow_down";
+        }
+        else{
+            icon="keyboard_arrow_right";
+        }
+        let targetID=$(el).children()[0].id;
+        let iconSelector=`#collapse-icon${targetID}`;
+        $(iconSelector).text(icon);
+    }
+    $(document).ready(function(){
+        $('.collapsible').collapsible({
+            accordion:false,
+            onOpen:function(el){
+                changeCollapseIcon(el, "open");
+            },
+            onClose:function(el){
+                changeCollapseIcon(el, "close");
+            },
+        });
+    })
+</script>
